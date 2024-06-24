@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
- body {
+html {
   background-color: antiquewhite;
 }
 
@@ -72,6 +72,22 @@ a {
   color: aliceblue;
 }
 
+
+
+
+
+/*-------zona donde edito el carrito y la zona del perfil*/
+
+
+.obciones-carrito{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+width: 12rem;
+}
+
+
 .carrito-compra {
   display: flex;
   justify-content: right;
@@ -86,10 +102,22 @@ a {
   background-size: cover;
 }
 
-.carrito-compra img {
-  height: 4rem;
-  width: 4rem;
+.Perfil {
+  display: flex;
+  justify-content: right;
+  align-items: top;
+  height: 3rem;
+  width: 3rem;
+  font-size: 0.9rem;
+  background-image: url(Usuario\ neustro.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+
+
+
 
 .arribacaebezera {
   display: flex;
@@ -145,6 +173,7 @@ input::placeholder {
 
 body {
   position: relative;
+
 }
 
 main {
@@ -155,6 +184,7 @@ main {
   align-items: center;
   flex-direction: row-reverse;
   background-color: antiquewhite;
+
 }
 
 .figuras {
@@ -177,8 +207,11 @@ main {
 }
 
 .filtrado-select {
-  width: 12rem;
-  height: 3rem;
+  width: 18rem;
+  height: 2.6875rem;
+  border-radius: .625rem;
+  background-color: antiquewhite;
+
 }
 
 .contenedor-figuras {
@@ -203,6 +236,19 @@ main {
 
   background-color: #e1d3c1;
 }
+
+
+
+
+
+.Card:hover{
+
+  visibility: visible;
+}
+
+
+
+
 
 img {
   height: 14.7754rem;
@@ -263,7 +309,7 @@ aside {
   width: 40rem;
 
   display: flex;
-  justify-content: start;
+  justify-content: left;
   align-items: end;
   flex-direction: column;
 }
@@ -271,23 +317,64 @@ aside {
 .colores-selecion {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
   margin: 0rem 4rem 3rem 0rem;
 }
 
 aside h2 {
+  width: 13rem;
   text-align: left;
-  width: 9.4rem;
   margin: 0rem 0rem 1rem 0rem;
   font-family: "Montserrat", sans-serif;
 }
+
 
 .colores-selecion input {
   height: 1.5rem;
   width: 1.5rem;
 }
+
+
+.color{
+  background-color: red;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 1.25rem;
+  border: 1px solid;
+}
+
+
+
+.Verde{
+  background-color: green;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 1.25rem;
+  border: 1px solid;
+}
+
+.Blanco{
+  background-color: white;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 1.25rem;
+  border: 1px solid;
+}
+
+
+.Negro{
+  background-color: white;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 1.25rem;
+  border: 1px solid;
+}
+
+
+
+
 
 .colores-selecion h3 {
   text-align: left;
@@ -296,20 +383,29 @@ aside h2 {
 
 .obciones-talles {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: row-reverse;
-  width: 5rem;
+  flex-direction: row;
+  width: 7rem;
+  height: 3rem;
   margin: 0.9375rem 0rem 0rem 0.9375rem;
+background-color: brown;
+
 }
 
+
+
 .destalle-zona {
-  width: 10rem;
+  width: 14rem;
   height: 3rem;
   display: flex;
-  justify-content: spcace-bcetween;
+  justify-content: space-around;
   align-items: center;
+  visibility: hidden;
 }
+
+
+
 
 .compra-producto {
   display: flex;
@@ -325,16 +421,19 @@ aside h2 {
 }
 
 .vistaprevia {
-  background-image: url(ojo-vistaprevia.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 1.4rem;
-  width: 1.4rem;
+  width: 4rem;
+  border-radius: 1rem;
+
+  background-color: black;
+
 }
 
 .Carrito-previa {
-  color: blanchedalmond;
+  background-color: #d9d9d9 ;
   height: 100vh;
   width: 31.25rem;
   position: absolute;
@@ -348,8 +447,16 @@ aside h2 {
   overflow-x: hidden;
   border: 1px solid black;
   visibility: hidden;
-
 }
+
+
+
+.Carrito-previa::-webkit-scrollbar {
+  height: 12px;
+  
+}
+
+
 
 .Carrito-previa h4 {
   text-align: left;
@@ -362,16 +469,16 @@ hr {
 
 .Carrito-container {
   height: 100vh;
-  width: 100%;
-  background-color: antiquewhite;
+  width: 31.25rem;
+  background-color: #d9d9d9 ;
 
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  overflow: scroll;
   overflow-x: auto;
-  overflow-y: inherit;
+overflow: scroll;
+
 }
 
 
@@ -399,13 +506,13 @@ hr {
 
 .obcionesPreviacarrito {
   height: 10rem;
-  width: 29rem;
+  width: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: black;
-  background-color: antiquewhite;
+  background-color: #d9d9d9 ;
 
 }
 
@@ -427,15 +534,19 @@ hr {
 
 
 .card-finalcotenedor{
+  background-color: #d9d9d9 ;
   text-align: right;
 
 }
 
 .borraElemento{
-  width: 3rem;
-  height: 3rem;
+  width: 1rem;
+  height: 1rem;
   padding: 1.25rem;
-color: black;
+background-image: url(IConoEliminar.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
 }
 
 
